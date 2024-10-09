@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get"> <!--method: get se envían los datos por la URL-->
+        <fieldset>
+            <legend>Formulario de ejemplo</legend>
+            <p>Nombre:<input type="text" name="nombre" placeholder="Inserte nombre de usuario" title="Nombre"></p>
+            <p>Edad:<input type="number" name="edad" required></p>
+            <p>Contraseña:<input type="password" name="contrasena"></p>
+            <p>Color favorito:<input type="color" name="color"></p>
+            <p>Fecha:<input type="date" name="fecha"></p>
+            <p>Fecha 2:<input type="datetime-local" name="fecha2"></p>
+            <p>Archivo:<input type="file" name="archivo"></p>
+            <p>Oculto:<input type="hidden" name="oculto" value="45"></p>
+        </fieldset>
+        <p><textarea placeholder="Interte texto" cols="100" rows="10"></textarea></p>
+        <p>Deporte favorito: 
+            <input type="checkbox" name="deporte" value="Baloncesto">Baloncesto
+            <input type="checkbox" name="deporte" value="Futbol">Futbol
+            <input type="checkbox" name="deporte" value="Tenis">Tenis
+        </p>
+        <p>Sexo: 
+            <input type="radio" name="sexo" value="Hombre">Hombre
+            <input type="radio" name="sexo" value="Mujer">Mujer
+        </p>
+        <p>Ciudad<select name="ciudad" multiple>
+            <option value="Madrid">Madrid</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Sevilla">Sevilla</option></select>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        
+    </form>
+</body>
+
+</html>
